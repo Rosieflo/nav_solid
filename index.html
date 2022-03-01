@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0px; padding: 0px;}
+    a{
+      color: #222;
+      text-decoration: none;
+    }
+    body{
+      font-size: 12px;
+      font-family: '나눔 고딕', arial, sans-serif;
+      color: #222;
+      background-color: #fff;
+    }
+    ul, li, ol{list-style: none;}
+
+    header{
+      position: relative;
+      width: 1200px;
+      height: 1000px;
+      margin: 0px auto;
+      background-color: aliceblue;
+    }
+    .gnb{
+      position: absolute;
+        top: 60px;
+        right: 0px;
+      width: 680px;
+      height: 40px;
+      z-index: 1;
+    }
+    .gnb > ul{
+      display: flex;
+    }
+    .gnb > ul > li{
+      width: 175px;
+      text-align: center;
+      line-height: 40px;
+    }
+    .gnb > ul > li > a{
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: darkgoldenrod;
+      transition: 0.4s;
+    }
+    .gnb > ul > li > a:hover{
+      color:darkgoldenrod;
+      background-color:tan;
+    }
+
+    .sub{
+      display: none;
+    }
+    .sub > li{}
+    .sub > li > a{
+      display: block;
+      color: #222328;
+      background-color: tan;
+    }
+    .sub > li > a:hover{
+      color: saddlebrown;
+      background-color: beige;
+    }
+    
+    .button{
+      width: 200px;
+      height: 100px;
+      margin: 0px auto;
+      padding-top: 10px;
+    }
+  </style>
+  <script src="./jquery-1.12.3.js"></script>
+  <script src="./main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="gnb">
+      <ul>
+        <li><a href="#" title="아우터">아우터</a>
+          <ul class="sub">
+            <li><a href="#" title="자켓">자켓</a></li>
+            <li><a href="#" title="코트">코트</a></li>
+            <li><a href="#" title="가디건">가디건</a></li>
+            <li><a href="#" title="머플러">머플러</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="#" title="팬트">팬츠</a>
+          <ul class="sub">
+            <li><a href="#" title="청바지">청바지</a></li>
+            <li><a href="#" title="짧은바지">짧은바지</a></li>
+            <li><a href="#" title="긴바지">긴바지</a></li>
+            <li><a href="#" title="레깅스">레깅스</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="#" title="악세사리">악세사리</a>
+          <ul class="sub">
+            <li><a href="#" title="귀걸이">귀걸이</a></li>
+            <li><a href="#" title="목걸이">목걸이</a></li>
+            <li><a href="#" title="반지">반지</a></li>
+            <li><a href="#" title="팔찌">팔찌</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="#" title="악세사리">악세사리</a>
+          <ul class="sub">
+            <li><a href="#" title="귀걸이">귀걸이</a></li>
+            <li><a href="#" title="목걸이">목걸이</a></li>
+            <li><a href="#" title="반지">반지</a></li>
+            <li><a href="#" title="팔찌">팔찌</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+</body>
+</html>
